@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/basliktxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/anton2"
+        android:text="Yemek Karşılaştırma Anketi"
+        android:textAlignment="center"
+        android:textColor="#087C71"
+        android:textSize="30dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="10dp">
+            <ImageView
+                android:id="@+id/hamimage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/hamburger"
+
+                />
+
+            <TextView
+                android:id="@+id/hamtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth2"
+                android:text="Hamburger" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/pizimage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pizza" />
+
+
+                <TextView
+                    android:id="@+id/piztxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amaranth2"
+                    android:text="Pizza" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/ayranimage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ayran3"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:id="@+id/ayrantxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayran"
+                android:fontFamily="@font/amaranth2"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/kolaimage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/kola3"
+                />
+            <TextView
+                android:id="@+id/kolatxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kola"
+                android:fontFamily="@font/amaranth2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/buttonbitir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anketi Bitir"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/amaranth2"
+        />
+    <Button
+        android:id="@+id/buttonsifirla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sıfırla"
+        android:fontFamily="@font/amaranth2"
+        android:layout_gravity="center"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-300dp"
+        >
+
+        <TextView
+            android:id="@+id/txtsonuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth2"
+            android:text="boş"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
